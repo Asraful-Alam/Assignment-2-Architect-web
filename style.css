@@ -1,11 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Work+Sans:ital,wght@0,400;1,700&display=swap');
 
-/* main{
-    display: flex; 
-    justify-content: center;
- } */
+body {
+    font-family: 'Work Sans';
+    background-color: lightslategray;
+}
 
-/* header and title style */
+/*---------------------------
+    header and title style 
+----------------------------*/
+
 .header-container {
     background-color: #ff900e1a;
 }
@@ -49,24 +52,84 @@
     padding-bottom: 30px;
 }
 
-/* about style */
-.about-container{
+/*----------------
+    about style
+ -----------------*/
+
+.about-container {
     margin-top: 30px;
-    width:800px;
-    height: 350px;   
-}
-.about{  
-    display: flex; 
-    gap: 20px;
+    display: flex;
     justify-content: center;
 }
 
-.about-banner-img{
+.about {
+    width: 80%;
+    display: flex;
+    gap: 30px;
+}
+
+.about-banner-img {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 20px;
 }
-.about-banner img{
-   width: 100%;
+
+.about-banner img {
+    width: 100%;
 }
 
+.about-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 500px;
+}
+
+.about-hade-title {
+    color: #727272;
+    font-family: 'Work Sans';
+}
+
+.about-title-color-black {
+    color: #131313;
+    font-weight: 700;
+    font-size: 30px;
+}
+
+.about-title-color-orange {
+    color: #FF900E;
+    font-weight: 700;
+    font-size: 30px;
+}
+
+.about-discrption {
+    color: #727272;
+}
+
+/*------------------------------------------- 
+    architect title and discrption style
+--------------------------------------------*/
+.architect-container {
+    
+    display: flex;
+    justify-content: center;
+}
+
+.architect-item {
+    margin-top: 40px;
+    width: 1080px;
+    height: 550px;
+    display: flex;
+
+}
+.architect-title-border{
+    width: 220px;
+    height: 50px;
+    border-left: 3px solid #FF900E;
+    padding-left: 10px;
+}
+
+
+.architect-banner img{
+    width: 100%;
+}
