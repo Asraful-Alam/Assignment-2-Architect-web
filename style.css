@@ -20,7 +20,7 @@ body {
 }
 
 .title {
-    width: 862px;
+    width: 750px;
     height: 225px;
     text-align: center;
     font-family: 'Work Sans';
@@ -29,6 +29,7 @@ body {
 .main-title {
     font-style: normal;
     font-weight: 700;
+    font-size: 20px;
 }
 
 .title-discrption {
@@ -47,9 +48,9 @@ body {
 }
 
 .banner img {
-    width: 925px;
-    height: 450px;
+    width: 100%;
     padding-bottom: 30px;
+    margin-top: 50px;
 }
 
 /*----------------
@@ -166,4 +167,37 @@ body {
 .architect-banner {
     display: flex;
     flex-direction: column;
+}
+
+/* madiya quary style */
+
+@media screen and (max-width: 576px) {
+
+    .title {
+        width: 100%;
+    }
+
+    .banner img {
+        width: 100%;
+    }
+
+    .about {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .about-title {
+        width: 100%;
+    }
+
+    .about-banner-img {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 20px;
+    }
+
+}
+
+.architect-container {
+    display: none;
 }
