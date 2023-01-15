@@ -1,8 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Work+Sans:ital,wght@0,400;1,700&display=swap');
-
+*{
+    margin: 0;
+}
 body {
     font-family: 'Work Sans';
-    background-color: lightslategray;
+    /* background-color: lightslategray; */
 }
 
 /*---------------------------
@@ -111,39 +113,37 @@ body {
     architect title and discrption style
 --------------------------------------------*/
 .architect-container {
-
+    padding: 30px;
+    margin-top: 50px;
     display: flex;
     justify-content: center;
 }
 
 .architect-item {
     margin-top: 40px;
-    width: 1080px;
-    height: 800px;
+   width: 100%;
     display: flex;
-
 }
 
 .architect-title-border {
-    width: 220px;
-    height: 50px;
+    width: 450px;
     border-left: 3px solid #FF900E;
     padding-left: 10px;
 }
 
 .architect-banner img {
-    width: 600px;
+    width: 700px;
     height: 900px
 }
 
 .architect-title-discrption {
     width: 450px;
-    height: 120px;
+    height: 175px;
     border-radius: 8px;
-    padding: 15px;
+    padding: 10px;
     margin-top: 17px;
     margin-right: 20px;
-    box-shadow: 2px 2px 2px 5px lightcyan;
+    box-shadow: 2px 2px 2px 5px #fafafa;
 }
 
 .btn-experience {
@@ -157,7 +157,6 @@ body {
     margin-top: -42px;
     font-size: 25px;
     font-weight: bold;
-
 }
 
 .btn-font-small {
@@ -175,10 +174,11 @@ body {
 
     .title {
         width: 100%;
+        margin-bottom: 30px;
     }
 
     .banner img {
-        width: 100%;
+        width: 100%;        
     }
 
     .about {
@@ -188,6 +188,9 @@ body {
 
     .about-title {
         width: 100%;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
     }
 
     .about-banner-img {
@@ -196,8 +199,21 @@ body {
         grid-gap: 20px;
     }
 
-}
+    .architect-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 30px;        
+    }
+    
+    .architect-banner, .architect-title-border, .architect-title-discrption{
+        width: 100%;
+    }
 
-.architect-container {
-    display: none;
+    .architect-banner img {       
+      width: 100%; 
+      height: 85%;   
+    }
+
+
 }
