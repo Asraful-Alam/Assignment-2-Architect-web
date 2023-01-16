@@ -81,6 +81,12 @@ body {
     border: none;
     font-size: 15px;
     border-radius: 8px;
+    
+}
+.btn-primary:hover{
+    background-color: #ffd90021;
+    color: black;
+    transition: 0.3s all ease;
 }
 
 .banner img {
@@ -192,6 +198,11 @@ body {
     font-size: 25px;
     font-weight: bold;
 }
+.btn-experience:hover{
+    background-color: #fa3983;
+    transition: 0.3s all ease;
+    color: black;
+}
 
 .btn-font-small {
     font-size: 15px;
@@ -234,7 +245,11 @@ Project Finished, panding and warkig style
     border-radius: 8px;
     margin-top: 40px;
 }
-
+.box-content:hover{
+    background-color: #ff8f0e40;
+    transition: 0.3s all ease;
+    
+}
 .box-content h2 {
     font-weight: 600;
 }
@@ -316,15 +331,14 @@ justify-content: center;
     font-weight: 600;
     box-shadow: 1px 1px 3px #5ebfd2;
 }
-.submit{
+.btn-subescrib{
     margin-top: 9px;
     border: none;
     border-radius: 10px;
     color: white;
     padding:9px 25px;
     font-size: 20px;
-    background-image: linear-gradient(to right, #ff257a 0%, #fa3983 100%);
-  
+    background-image: linear-gradient(to right, #ff257a 0%, #fa3983 100%);  
 }
 
 
