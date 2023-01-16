@@ -18,16 +18,17 @@ label.nav-title {
     font-weight: bold;
 }
 
-nav ul{
+nav ul {
     float: right;
-    margin-right: 20px;    
+    margin-right: 20px;
 }
 
-nav ul li{
+nav ul li {
     display: inline-block;
     line-height: 80px;
     margin: 0 5px;
 }
+
 li {
     list-style: none;
 }
@@ -81,16 +82,20 @@ body {
     border: none;
     font-size: 15px;
     border-radius: 8px;
-    
+
 }
-.btn-primary:hover{
+
+.btn-primary:hover {
     background-color: #ffd90021;
     color: black;
     transition: 0.3s all ease;
 }
-
+.banner{
+    display: flex;
+    justify-content: center;
+}
 .banner img {
-    width: 100%;
+    width: 80%;
     padding-bottom: 30px;
     margin-top: 50px;
 }
@@ -198,7 +203,8 @@ body {
     font-size: 25px;
     font-weight: bold;
 }
-.btn-experience:hover{
+
+.btn-experience:hover {
     background-color: #fa3983;
     transition: 0.3s all ease;
     color: black;
@@ -245,11 +251,13 @@ Project Finished, panding and warkig style
     border-radius: 8px;
     margin-top: 40px;
 }
-.box-content:hover{
+
+.box-content:hover {
     background-color: #ff8f0e40;
     transition: 0.3s all ease;
-    
+
 }
+
 .box-content h2 {
     font-weight: 600;
 }
@@ -305,12 +313,13 @@ footer {
     margin-top: 80px;
     margin-bottom: 80px;
 }
-.subescrib{
+
+.subescrib {
     display: flex;
-justify-content: center;
+    justify-content: center;
 }
 
-.subescrib-item{
+.subescrib-item {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -320,9 +329,10 @@ justify-content: center;
     border-radius: 20px;
     padding: 30px;
     margin-top: 30px;
-    background-color: #ff8f0e16 ;
+    background-color: #ff8f0e16;
 }
-.form-control{
+
+.form-control {
     display: block;
     width: 100%;
     padding: 15px;
@@ -331,28 +341,45 @@ justify-content: center;
     font-weight: 600;
     box-shadow: 1px 1px 3px #5ebfd2;
 }
-.btn-subescrib{
+
+.btn-subescrib {
     margin-top: 9px;
     border: none;
     border-radius: 10px;
     color: white;
-    padding:9px 25px;
+    padding: 9px 25px;
     font-size: 20px;
-    background-image: linear-gradient(to right, #ff257a 0%, #fa3983 100%);  
+    background-image: linear-gradient(to right, #ff257a 0%, #fa3983 100%);
 }
-
-
-
-
 
 /* madiya quary style */
 
 @media screen and (max-width: 576px) {
 
-    .title {
+    /* nav item style */
+    nav {
+        display: flex;
+        flex-direction: column;
         width: 100%;
-        margin-bottom: 30px;
+        height: auto;
     }
+
+    label.nav-title {
+        padding: 0;
+        display: flex;
+        justify-content: center;
+    }
+
+    nav ul li {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        line-height: 50px;
+
+    }
+
+    /* header banner title style */
 
     .banner-title {
         width: 100%;
@@ -380,6 +407,8 @@ justify-content: center;
         grid-template-columns: repeat(1, 1fr);
         grid-gap: 20px;
     }
+
+    /* architect title and discrption */
 
     .architect-container {
         display: flex;
@@ -415,6 +444,8 @@ justify-content: center;
 
     }
 
+    /* Sponspors Group style */
+
     .sponspor-logo-item {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
@@ -430,9 +461,12 @@ justify-content: center;
         flex-direction: column;
         gap: 15px;
     }
-.form-control{
-    width: 80%;
-}
+
+    .form-control {
+        width: 80%;
+    }
+
+    /* footer style */
 
     footer {
         display: flex;
@@ -440,27 +474,5 @@ justify-content: center;
         justify-content: center;
         text-align: center;
         height: 100px
-    }
-
-    nav{
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        height: auto;
-    }
-    
-    label.nav-title{
-        padding: 0;
-        display: flex;
-        justify-content: center;
-    }
-    
-    nav ul li{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        line-height: 50px;
-        
     }
 }
