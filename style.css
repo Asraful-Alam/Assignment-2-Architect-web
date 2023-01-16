@@ -1,7 +1,41 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Work+Sans:ital,wght@0,400;1,700&display=swap');
-*{
+
+* {
     margin: 0;
+
+    text-decoration: none;
 }
+
+nav {
+    height: 80px;
+    width: 100%;
+}
+
+label.nav-title {
+    line-height: 80px;
+    padding: 0 50px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+nav ul{
+    float: right;
+    margin-right: 20px;    
+}
+
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+li {
+    list-style: none;
+}
+
+li a {
+    color: #727272;
+}
+
 body {
     font-family: 'Work Sans';
     /* background-color: lightslategray; */
@@ -21,7 +55,7 @@ body {
     align-items: center;
 }
 
-.title {
+.banner-title {
     width: 750px;
     height: 225px;
     text-align: center;
@@ -121,7 +155,7 @@ body {
 
 .architect-item {
     margin-top: 40px;
-   width: 100%;
+    width: 100%;
     display: flex;
 }
 
@@ -168,6 +202,95 @@ body {
     flex-direction: column;
 }
 
+/* -----------------------------------------
+Project Finished, panding and warkig style 
+-------------------------------------------*/
+.some-facts-title {
+    margin-left: 40px;
+}
+
+.some-facts-title p {
+    color: #727272;
+    width: 400px;
+    margin-top: 10px;
+
+}
+
+.box {
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+.box-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 200px;
+    height: 200px;
+    padding: 10px;
+    border: 1px solid #FF900E;
+    border-radius: 8px;
+    margin-top: 40px;
+}
+
+.box-content h2 {
+    font-weight: 600;
+}
+
+.box-content p {
+    color: #727272;
+    font-weight: 600;
+}
+
+
+
+/* Sponspors style */
+
+.sponspors-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.sponspors-title h1 {
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.sponspors-title p {
+    width: 45%;
+    text-align: center;
+    margin-bottom: 30px;
+
+}
+
+.sponspor-logo-item {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.sponspor-logo img {
+    width: 100%;
+    height: auto;
+}
+
+footer {
+    width: 100%;
+    height: 100px;
+    background-color: #ff900e1a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
 /* madiya quary style */
 
 @media screen and (max-width: 576px) {
@@ -177,13 +300,18 @@ body {
         margin-bottom: 30px;
     }
 
+    .banner-title {
+        width: 100%;
+        height: auto;
+    }
+
     .banner img {
-        width: 100%;        
+        width: 100%;
     }
 
     .about {
         display: flex;
-        flex-direction: column-reverse;
+        flex-direction: column;
     }
 
     .about-title {
@@ -199,21 +327,65 @@ body {
         grid-gap: 20px;
     }
 
-    .architect-container{
+    .architect-container {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        gap: 30px;        
+        gap: 30px;
+    }
+
+    .architect-banner,
+    .architect-title-border,
+    .architect-title-discrption {
+        width: 100%;
+
+    }
+
+    .architect-banner img {
+        width: 100%;
+        height: 85%;
+    }
+
+    .some-facts-title p {
+        width: 100%;
+        height: auto;
+    }
+
+    .box {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        justify-items: center;
+        width: 95%;
+        height: auto;
+        gap: 20px;
+
+    }
+
+    .sponspor-logo-item {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        justify-items: center;
+        gap: 20px;
+    }
+
+    footer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        height: 100px
+    }
+
+    nav{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: auto;
     }
     
-    .architect-banner, .architect-title-border, .architect-title-discrption{
-        width: 100%;
+    label.nav-title{
+        padding: 0;
+        display: flex;
+        justify-content: center;
     }
-
-    .architect-banner img {       
-      width: 100%; 
-      height: 85%;   
-    }
-
-
 }
